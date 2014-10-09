@@ -150,3 +150,7 @@ html.ltr .nav nav .navigation li a:hover{
 }
 .ss_samsung .footer {font-size: 15px !important}
 .ss_samsung .play-btn {position: absolute !important;}
+
+@media (min-width: 40.063em){
+ .ss_samsung .play-btn {margin: -109.5px -130px !important;}
+}
