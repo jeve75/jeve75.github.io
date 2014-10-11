@@ -172,7 +172,10 @@ html.ltr .nav nav .navigation li .icon-estore{font-size: 24px !important;}
 html.ltr .nav nav .navigation li a:hover{
  text-decoration: none; 
 }
-.ss_samsung .footer {font-size: 15px !important}
+.ss_samsung .footer {
+	font-size: 15px !important;
+	bottom: 0px;
+}
 .ss_samsung .play-btn {position: absolute !important; margin-left: -58.5px;}
 
 @media (min-width: 40.063em){
