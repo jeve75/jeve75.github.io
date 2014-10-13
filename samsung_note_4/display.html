@@ -303,6 +303,7 @@
 
             jQuery(".slide_1").fadeIn( "slow" );
             $(".s1,.s2").click(function(){
+              $( this.parent.parent ).toggleClass( "activo" );
               $(".slide_1").fadeToggle('slow');
               $(".slide_2").fadeToggle('slow');
             });
