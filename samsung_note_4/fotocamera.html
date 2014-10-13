@@ -49,27 +49,9 @@
       <div class="close"><img src="images/close_button.png"></div>
       <div class="container">
         <div class="row">
-          <p class="home_title">Display Quad HD Super AMOLED</p>
+          <p class="home_title">Fotocamera potenziata</p>
+          <p class="white venti center">Alta qualità e funzioni innovative</p>
         </div>
-
-        <div class="row">
-          <div class="well">
-            <div class="col-md-offset-2 col-md-8">
-              <div class="responsive">
-                <div class="thumbnail active">
-                  <div class="caption">
-                    <h3><a href="#" class="s1">dimensione e definizione</a></h3>
-                  </div>
-                </div>  
-                <div class="thumbnail ">
-                  <div class="caption">
-                    <h3><a href="#" class="s2">multischermo avanzato</a></h3>
-                  </div>
-                </div>
-              </div><!-- End Responsive -->
-            </div><!-- End col -->
-          </div><!-- End Well -->
-        </div><!-- End row -->
 
         <div class="slide_1">
           <div class="row">
@@ -78,12 +60,12 @@
                 <div class="responsive2">
                   <div class="">
                     <div class="caption">
-                      <img src="images/display_img_3.png">
+                      <img src="images/fotocamera_img_1.png">
                     </div>
                   </div>  
                   <div class="">
                     <div class="caption">
-                      <img src="images/display_img_2.png">
+                      <img src="images/fotocamera_img_2.png">
                     </div>
                   </div>
 
@@ -95,15 +77,15 @@
           <div class="row">
             <div class="well">
               <div class="col-md-12">
-                <p class="white trenta upper">Per goderti ogni dettaglio, come mai prima.</p>
+                <p class="white trenta upper">Per scattare selfie con tutti i tuoi amici, come mai prima.</p>
                 <p class="white trenta">
-                Schermo di altissima qualità.</p>
-                <p class="white diciotto">Immergiti in una nuova esperienza visiva, grazie ad uno schermo ancora più grande (5,7’’) e una risoluzione ancora più evoluta, per percepire colori e dettagli più vivi che mai.</p>
+                Fotocamera potenziata.</p>
+                <p class="white diciotto">Con la funzione "selfie panoramico” della fotocamera frontale, cattura le tue emozioni più belle con scatti perfetti e ad ampio raggio. Nessun amico rimarrà più fuori campo! Inoltre,  le tue foto non saranno mai più mosse, grazie allo stabilizzatore ottico della fotocamera posteriore da 16 Mpx.
                 <div class="thumbnail innerbutton">
                   <div class="caption">
                     <h3><a href="#">vai alla scheda prodotto</a></h3>
                   </div>
-                </div> 
+                </div>
               </div><!-- End col -->
             </div><!-- End Well -->
           </div><!-- End row -->
@@ -113,7 +95,7 @@
           <div class="row">
             <div class="well">
               <div class="col-md-12">
-                <div class="">
+                <div class="responsive2">
                   <div class="">
                     <div class="caption">
                       <img src="images/display_img_1.png">
@@ -128,15 +110,12 @@
           <div class="row">
             <div class="well">
               <div class="col-md-12">
-                <p class="white trenta upper">Per organizzare ogni attività, come mai prima.</p>
+                <p class="white trenta upper">Per goderti ogni dettaglio, come mai prima.</p>
                 <p class="white trenta">
-                Multitasking più semplice e fluido.</p>
-                <p class="white diciotto">Utilizza più applicazioni sulla stessa schermata, contemporaneamente, grazie alla funzione Multi-schermo. Scegli tra diverse modalità di visualizzazione (schermo intero, multischermo, pop-up e icona) per lavorare su più applicazioni e gestire i tuoi contenuti tra un’applicazione l’altra. Poche e semplici mosse per portare a termine tutte le tue attività.</p>
-                <div class="thumbnail innerbutton">
-                  <div class="caption">
-                    <h3><a href="#">vai alla scheda prodotto</a></h3>
-                  </div>
-                </div> 
+                Schermo di altissima qualità.</p>
+                <p class="white diciotto">
+                  Immergiti in una nuova esperienza visiva, grazie ad uno schermo ancora più grande <span class="eblue">(5,7’’)</span> e una risoluzione ancora più evoluta <span class="eblue">(Quad HD Super AMOLED)</span>, per percepire colori e dettagli come se li osservassi dal vivo. 
+                </p>
               </div><!-- End col -->
             </div><!-- End Well -->
           </div><!-- End row -->
@@ -231,45 +210,10 @@
               interval: false
             });
 
-            $('.responsive').slick({
-              dots: false,
-              infinite: false,
-              speed: 300,
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
-            });
-
             $('.responsive2').slick({
               dots: true,
               infinite: true,
-              speed: 300,
-              slidesToShow: 1,
-              slidesToScroll: 1
+              speed: 300
             });
 
             jQuery(".slide_1").fadeIn( "slow" );
