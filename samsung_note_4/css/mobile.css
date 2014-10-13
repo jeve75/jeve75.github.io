@@ -24,6 +24,7 @@
 	.full.spen img, .full.display img{
 		width: auto;
 		max-height: 300px;
+		max-width: 360px;
 	}
 }
 @media(min-width:768px){
@@ -47,7 +48,7 @@
 		display: none;
 	}
 	.full.spen, .full.display{
-		max-height: 690px;		
+		max-height: 620px;		
 	}
 }
 @media(min-width:992px){
@@ -55,7 +56,7 @@
 		display: block;
 	}
 	.full.spen, .full.display{
-		max-height: 690px;		
+		max-height: 620px;		
 	}
 }
 @media(min-width:1200px){
