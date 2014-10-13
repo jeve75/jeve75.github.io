@@ -1,0 +1,34 @@
+<style>
+
+.contenuti{width: 100%; overflow: hidden; margin: 0; padding: 0;}
+.box{position: relative; width: 100%; margin: 2rem 0;}
+.box:before{content: ""; display: block; padding-top: 56.25%;}
+.box iframe, .box object, .box embed{position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;}
+
+</style>
+
+<div class="contenuti">
+
+	<div class="box">
+		<iframe src="//www.youtube.com/embed/B2FeP0684is?version=3&autoplay=0&rel=0&modestbranding=1&wmode=transparent&showinfo=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div class="box">
+		<!-- Start of Brightcove Player -->
+		<div style="display:none"></div>
+		<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+		<object id="myExperience3669518244001" class="BrightcoveExperience">
+			<param name="bgcolor" value="#FFFFFF" />
+			<param name="playerID" value="3666569416001" />
+			<param name="playerKey" value="AQ~~,AAAA1u88XUE~,fft8jN67dHQkEB14xxPfIc-3QCfIF1of" />
+			<param name="isVid" value="true" />
+			<param name="isUI" value="true" />
+			<param name="dynamicStreaming" value="true" />
+			<param name="wmode" value="transparent" />
+			<param name="@videoPlayer" value="3669518244001" />
+		</object>
+		<script type="text/javascript">brightcove.createExperiences();</script>
+		<!-- End of Brightcove Player -->
+	</div>
+
+</div>

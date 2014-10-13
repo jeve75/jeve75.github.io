@@ -21,6 +21,10 @@
 	.full.spen, .full.display{
 		max-height: 490px;		
 	}
+	.full.spen img, .full.display img{
+		width: auto;
+		max-height: 300px;
+	}
 }
 @media(min-width:768px){
 	.mobile{display: none;}
@@ -43,7 +47,7 @@
 		display: none;
 	}
 	.full.spen, .full.display{
-		max-height: 490px;		
+		max-height: 690px;		
 	}
 }
 @media(min-width:992px){
