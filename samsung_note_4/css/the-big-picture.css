@@ -32,3 +32,15 @@ body {
   padding-top: 20px;
   position: relative;
 }
+.full.displaypage {
+  background: url('../images/display_bg.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  position: relative;
+  height: auto !important;
+  padding: 0px;
+}
