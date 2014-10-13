@@ -321,7 +321,9 @@ Additional Styles (required)
 }
 .display .well .thumbnail.active .caption h3 a,
 .displaypage .well .thumbnail.active .caption h3 a,
-.batteriapage .well .thumbnail.active .caption h3 a
+.displaypage .well .thumbnail.gray.active .caption h3 a,
+.batteriapage .well .thumbnail.active .caption h3 a,
+.batteriapage .well .thumbnail.gray.active .caption h3 a
 {
 	text-transform: uppercase;
 	color: #0689d9;
@@ -381,12 +383,14 @@ Additional Styles (required)
 .responsive2 .slick-next{right: -55px;}
 
 /* slides */
-.slide_1, .slide_2{
+.slide_1, .slide_2, .slide_3, .slide_4{
 	/*visibility: hidden;*/
 	display: none;
 }
 .desktop .caption img{
-	max-width: 100%;
+	max-width: 100%;;
+	margin: auto;
+	display: block;
 }
 
 /* CLOSE */
