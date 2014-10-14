@@ -36,12 +36,12 @@ a {
 }
 
 .panel1 {
-    /*background-color: #95BD28;*/
+    background-color: #95BD28;
     z-index: 10;
 }
 
 .panel2 {
-    /*background-color: #FFD993;*/
+    background-color: #FFD993;
     color: #333;
 }
 
