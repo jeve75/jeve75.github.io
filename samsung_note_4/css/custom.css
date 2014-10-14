@@ -472,3 +472,17 @@ Additional Styles (required)
 {
 	color: #353535 !important;
 }
+
+/* SPECS */
+.spec {
+	width: 25%;
+	min-height: 300px;
+	height: auto;
+}
+.spec.quattro{
+	background: url('../images/spec-4.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.quattro:hover {
+  background-image: url('../images/spec-4-over.png');
+}

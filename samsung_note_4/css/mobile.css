@@ -77,6 +77,6 @@
 		width: 970px !important;
 	}
 	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
-		height: 120px !important;
+		height: 60px !important;
 	}
 }

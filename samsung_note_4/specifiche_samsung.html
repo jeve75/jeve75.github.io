@@ -43,6 +43,7 @@
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/animate4.css" rel="stylesheet">
+    <link href="css/basic-quickflips.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
@@ -210,110 +211,26 @@ addNavState('feature','note4');
 <!-- cheil note 4 -->
     <div class="jumbotron desktop displaypage full">
       <!-- <div class="close"><img src="images/close_button.png"></div> -->
-      <div class="container">
+
+      <div class="container post fullwidth">
         <div class="row">
-          <p class="home_title">Display Quad HD Super AMOLED</p>
-        </div>
-
-        <div class="row">
-          <div class="well">
-            <div class="col-md-offset-1 col-md-10">
-              <div class="responsive">
-                <div class="thumbnail active frost">
-                  <div class="caption">
-                    <h3><a href="#" class="s1">Frost White</a></h3>
-                  </div>
-                </div>  
-                <div class="thumbnail charcoal">
-                  <div class="caption">
-                    <h3><a href="#" class="s2">Charcoal Black</a></h3>
-                  </div>
-                </div>
-                <div class="thumbnail bronze">
-                  <div class="caption">
-                    <h3><a href="#" class="s3">bronze gold</a></h3>
-                  </div>
-                </div>
-              </div><!-- End Responsive -->
-            </div><!-- End col -->
-          </div><!-- End Well -->
-        </div><!-- End row -->
-      </div><!-- End container -->
-
-      <div class="slide_1">
-        <div class="container post fullwidth">
-          <div class="row">
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img1.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img2.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img3.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img4.png">
-            </div>
-             <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img5.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img6.png">
+          <div class="col-md-3 bcplayer spec quattro">
+          </div>
+          <div class="col-md-3 bcplayer spec quattro">
+            <div class="quickFlip">
+              <div class="blackPanel">
+                <a href="#" class="quickFlipCta">Click</a>
+              </div>
+              <div class="redPanel">
+                  <p><a href="#" class="quickFlipCta">Click</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="slide_2">
-        <div class="container post fullwidth">
-          <div class="row">
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img1.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img2.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img3.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img4.png">
-            </div>
-             <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img5.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img6.png">
-            </div>
+          <div class="col-md-3 bcplayer spec quattro">
+          </div>
+          <div class="col-md-3 bcplayer spec quattro">
           </div>
         </div>
-      </div>
-
-      <div class="slide_3">
-        <div class="container post fullwidth">
-          <div class="row">
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img1.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img2.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img3.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img4.png">
-            </div>
-             <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img5.png">
-            </div>
-            <div class="col-md-6 bcplayer gallery">
-              <img src="images/gallery_2_img6.png">
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
 <!-- ./cheil note 4 -->
@@ -327,79 +244,21 @@ addNavState('feature','note4');
     
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.quickflip.min.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/viewportchecker.js"></script>
 
-    <script type="text/javascript">
+	<script type="text/javascript">
         jQuery(document).ready(function() {
             jQuery('.post, .post2, .post3').addClass("ahidden").viewportChecker({
                 classToAdd: 'avisible animated fadeIn',
                 offset: 100
                });
 
-            $('.responsive').slick({
-              dots: false,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
-            });
-
-            $('.responsive2').slick({
-              dots: true,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 1,
-              slidesToScroll: 1
-            });
-
-           jQuery(".slide_1").fadeIn( "slow" );
-            $(".s1").click(function(){
-              $(".s2,.s3,.s4").parent().parent().parent().removeClass("active");
-              $( this ).parent().parent().parent().addClass("active");
-              $(".slide_1").fadeIn('slow');
-              $(".slide_2,.slide_3,.slide_4").fadeOut('slow');
-            });
-
-            $(".s2").click(function(){
-              $(".s1,.s3,.s4").parent().parent().parent().removeClass("active");
-              $( this ).parent().parent().parent().addClass("active");
-              $(".slide_2").fadeIn( "slow" );
-              $(".slide_1,.slide_3,.slide_4").fadeOut('slow');
-            });
-
-            $(".s3").click(function(){
-              $(".s1,.s2,.s4").parent().parent().parent().removeClass("active");
-              $( this ).parent().parent().parent().addClass("active");
-              $(".slide_1,.slide_2,.slide_4").fadeOut('slow');
-              $(".slide_3").fadeIn('slow');
+            $(function() {
+                $('.quickFlip').quickFlip();
             });
         });
     </script>

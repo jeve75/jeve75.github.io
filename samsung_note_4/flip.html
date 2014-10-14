@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Best jQuery plugin to do a flip effect on a selected element</title>
+    
+    <style>
+        body{
+            text-align: center;
+        }
+        
+        input{
+            margin-top:20px;
+            font-size:16px;
+            font-weight: bold;
+            padding:5px 10px;
+        }
+
+        #box{
+            margin:50px auto;
+            width:500px;
+            height:100px;
+            color:#fff;
+            padding:10px;
+            background: orange;
+        }
+
+        .button2{
+            display:none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <input type="button" value="Flip Box" class="button"  />
+    <input type="button" value="Flip Back" class="button2"  />
+    
+    <div id="box">Box</div>
+    
+
+    <!-- 
+        We use Google's CDN to serve the jQuery js libs. 
+        To speed up the page load we put these scripts at the bottom of the page 
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+     <script src="js/jquery-ui.min.js"></script></script>
+
+
+    <!-- load flip plugin. You can get latest version from here: http://lab.smashup.it/flip/ -->
+    <script src="js/jquery.flip.min.js"></script>
+    
+    <script>
+
+        //attach click event to button
+        $('.button').click(function(){
+
+            //we add the flip effect to box
+            $("#box").flip({content:'Flipped Box'});
+
+            //show flip back button
+            $('.button2').show();
+        });
+
+        //flip back box
+        $('.button2').click(function(){
+            $("#box").revertFlip()
+        });
+
+    </script>
+
+</body>
+</html>
