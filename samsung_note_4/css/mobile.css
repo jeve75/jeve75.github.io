@@ -26,6 +26,9 @@
 		max-height: 300px;
 		max-width: 360px;
 	}
+	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
+		height: 120px !important;
+	}
 }
 @media(min-width:768px){
 	.mobile{display: none;}
@@ -50,6 +53,9 @@
 	.full.spen, .full.display{
 		max-height: 620px;		
 	}
+	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
+		height: 120px !important;
+	}
 }
 @media(min-width:992px){
 	.jumbotron.menu img {
@@ -57,6 +63,9 @@
 	}
 	.full.spen, .full.display{
 		max-height: 620px;		
+	}
+	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
+		height: 120px !important;
 	}
 }
 @media(min-width:1200px){
@@ -68,6 +77,6 @@
 		width: 970px !important;
 	}
 	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
-		height: 110px;
+		height: 120px !important;
 	}
 }
