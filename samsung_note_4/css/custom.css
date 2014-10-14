@@ -474,7 +474,9 @@ Additional Styles (required)
 }
 
 /* SPECS */
-
+.spec{
+	cursor: pointer;
+}
 .spec.uno{
 	background: url('../images/spec-1.png') no-repeat center top;
     transition: 0.5s;
