@@ -178,6 +178,19 @@ html.ltr .nav nav .navigation li a:hover{
 	font-size: 15px !important;
 	bottom: 0px;
 }
+.nav .container{padding: 0 !important;}
+.cookie_notice, .cookie_notice a.close{font-size: 16px !important;}
+.cookie_notice a.close{margin: 0 !important; font-weight:normal !important;}
+#share-tab .label, .pre-register .label{font-size: 18px !important;}
+#share-tab .icon-share{font-size: 36px !important;}
+.pre-register .icon-register{font-size: 27px !important;}
+@media (max-width: 640px){
+	.pre-register .label{font-size: 14px !important;}
+	#share-tab .icon-share{font-size: 26px !important;}
+}
+#share-tab .label{color: black;}
+#share-tab .label:hover{color: #0689d8 !important;}
+#share-tab{text-decoration: none !important;}
 
 /* CORRETTO DA CSS GLOBAL
 .ss_samsung .play-btn {position: absolute !important; margin-left: -58.5px;}
@@ -237,9 +250,6 @@ Additional Styles (required)
 	height:12px;
 	background:#3276b1;
 	border-color:#3276b1;
-}
-.thumbnail .caption {
-	padding: 0px !important;
 }
 
 /* DISPLAY SECTION */
@@ -380,7 +390,7 @@ Additional Styles (required)
 	height: 44px;
 	width: 24px;
 	margin-top: 0px;
-	top: 13%;
+	top: 25%
 }
 .responsive2 .slick-prev, .responsive2 .slick-next{top: 40%}
 .responsive2 .slick-prev {left: -55px;}
@@ -423,39 +433,3 @@ Additional Styles (required)
 .bcplayer .box{position: relative; width: 100%; margin: 0;}
 .bcplayer .box:before{content: ""; display: block; padding-top: 56.25%;}
 .bcplayer .box iframe, .bcplayer .box object, .bcplayer .box embed{position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;}
-
-
-/* GALLERY */
-.bcplayer.gallery{
-	padding: 4px !important;
-}
-.bcplayer.gallery img{
-	width: 100%;
-}
-.thumbnail.charcoal{
-	background: #66676b !important;
-	border: none !important;
-}
-.thumbnail.frost{
-	background: #ffffff !important;
-	border: none !important;
-}
-.thumbnail.bronze{
-	background: #a48a7c !important;
-	border: none !important;
-}
-.thumbnail.active.charcoal,
-.thumbnail.active.bronze,
-.thumbnail.active.frost
-{
-	border: solid #0689d9 2px !important;
-}
-.thumbnail.active.charcoal .caption h3 a,
-.thumbnail.charcoal .caption h3 a,
-.thumbnail.active.bronze .caption h3 a,
-.thumbnail.bronze .caption h3 a,
-.thumbnail.active.frost .caption h3 a,
-.thumbnail.frost .caption h3 a
-{
-	color: #353535 !important;
-}
