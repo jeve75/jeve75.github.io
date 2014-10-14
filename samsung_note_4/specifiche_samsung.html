@@ -336,13 +336,11 @@ addNavState('spec','note4');
           });
 
           $(".spec").click(function(){
+            console.log("spec premuto");
+            $(".backPanel,.centered-block").css("display","none");
+            $(this).children(".backPanel").css("display","block");
+            $(this).children(".backPanel").children(".centered-block").css("display","block");
             centerDiv();
-            var questo = $(this);
-            $(".backPanel,.centered-block").fadeOut('fast');
-            $(this).children(".backPanel").fadeToggle('fast', function(){
-              centerDiv();
-              $(this).children(".centered-block").fadeIn('fast');
-            });
           });
 
           $(window).resize(function () {
