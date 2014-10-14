@@ -1,3 +1,4 @@
+@@ -0,0 +1,110 @@
 /* it's a good idea to define a height and width for quickFlip */
 
 body {
@@ -48,19 +49,13 @@ H1, H2 {
 }
 
 .quickFlip .blackPanel, .quickFlip2 .blackPanel, .quickFlip3 .blackPanel {
-    background-color: #FFD993;
-    color: darkbrown;
-    border: 1px outset #A61C14;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
+    /*background-color: #FFD993;*/
+    color: white;
 }
 
 .quickFlip .redPanel, .quickFlip2 .redPanel, .quickFlip3 .redPanel {
-    background-color: #75941f;
+    background-color: white;
     color: #FFF;
-    border: 1px outset #4f6417;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
 }
 
 .half-col p {
@@ -114,3 +109,5 @@ H1, H2 {
 .quickFlipCta {
     cursor: pointer;
 }
+ No newline at end of file
+
