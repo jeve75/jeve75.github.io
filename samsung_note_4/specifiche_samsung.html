@@ -214,24 +214,122 @@ addNavState('feature','note4');
 
       <div class="container post fullwidth">
         <div class="row">
-          <div class="col-md-3 bcplayer spec quattro">
+          <div class="col-md-3 bcplayer spec uno">
             <div class="backPanel">
-              close
+              <div class="centered-block">
+              <ul>
+                <li>153,5 X 78,6 X 8,5 mm / 176 g</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec due">
+            <div class="backPanel">
+              <div class="centered-block">
+              <ul>
+                <li>Quad HD Super AMOLED (2560 x 1440) da 5,7”</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec tre">
+            <div class="backPanel">
+              <div class="centered-block">
+                <ul>
+                  <li>Processore Quad Core da 2,7 GHz</li>
+                  <p class="specsmall">(Può variare in base al Paese e al gestore)</p>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col-md-3 bcplayer spec quattro">
             <div class="backPanel">
-              close
+              <div class="centered-block">
+              <ul>
+                <li>RAM da 3 GB + Memoria interna da 32 GB</li>
+                <li>Supporta microSD fino a 128 GB</li>
+              </ul>
+            </div>
             </div>
           </div>
-          <div class="col-md-3 bcplayer spec quattro">
+          <div class="col-md-3 bcplayer spec cinque">
             <div class="backPanel">
-              close
+              <div class="centered-block">
+              <ul>
+                <li>2,5G (GSM / GPRS / EDGE): 850 / 900 / 1800 / 1900 MHz</li>
+                <li>3G (HSPA＋ 42 Mbps): 850 / 900 / 1900 / 2100 MHz</li>
+                <li>4G (LTE Cat.6 300/50 Mbps)</li>
+              </ul>
+              <p class="specsmall">(Può variare in base al Paese e al gestore)</p>
+            </div>
             </div>
           </div>
-          <div class="col-md-3 bcplayer spec quattro">
+          <div class="col-md-3 bcplayer spec sei">
             <div class="backPanel">
-              close
+              <div class="centered-block">
+              <ul>
+                <li>Fotocamera frontale da 3,7 MP + F1.9 / Modalità Selfie (90°), Selfie panoramico (120°)</li>
+                <li>Fotocamera posteriore da 16 MP + Smart OIS / Fast AF, Live HDR (Colore ricco)</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec sette">
+            <div class="backPanel">
+              <div class="centered-block">
+              <ul>
+                <li>Android 4.4 (Kitkat)</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec otto">
+            <div class="backPanel">
+              <div class="centered-block">
+              <ul>
+                <li>Wi-Fi 802.11 a/b/g/n/ac (2 x 2 MIMO)</li>
+                <li>Download Booster, NFC, Bluetooth® v 4.1 (BLE,ANT+), USB2.0, MHL 3.0</li>
+                <li>LED IR (telecomando)</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec nove">
+            <div class="backPanel">
+              <div class="centered-block">
+              <ul>
+                <li>3220 mAh a ricarica rapida</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec dieci">
+            <div class="backPanel">
+              <div class="centered-block">
+              <ul>
+                <li>Codec: MP3, AAC / AAC＋ / eAAC＋, WMA, AMR-NB / WB, Vorbis, FLAC</li>
+                <li>Adapt Sound, Sound Alive, Wise Voice 2.0, Extra Volume 2.0</li>
+                <li>3 microfoni (registrazione vocale direzionale)</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec undici">
+            <div class="backPanel">
+              <div class="centered-block">
+              <ul>
+                <li>15 g, Distanza di hovering 15 mm, Livello di pressione 2,048</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec dodici">
+            <div class="backPanel">
+              <div class="centered-block">
+              <ul>
+                <li>Sensore gesti, accelerometro, sensore geo-magnetico, giroscopio, sensore di luminosità ambientale, RGB, sensore di prossimità, barometro, sensore Hall, Scanner dell'impronta digitale, UV, Cardio</li>
+              </ul>
+            </div>
             </div>
           </div>
         </div>
@@ -254,19 +352,45 @@ addNavState('feature','note4');
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/viewportchecker.js"></script>
 
-	<script type="text/javascript">
+    <script type="text/javascript">
         jQuery(document).ready(function() {
-            jQuery('.post, .post2, .post3').addClass("ahidden").viewportChecker({
-                classToAdd: 'avisible animated fadeIn',
-                offset: 100
-               });
+          jQuery('.post, .post2, .post3').addClass("ahidden").viewportChecker({
+            classToAdd: 'avisible animated fadeIn',
+            offset: 100
+          });
 
-           $(".quattro").click(function(){
-              console.log("cliccato");
-              $(".quattro").children(".backPanel").fadeOut('fast');
-              $(this).children(".backPanel").fadeIn('fast');
+          $(".spec").click(function(){
+            centerDiv();
+            var questo = $(this);
+            $(".backPanel,.centered-block").fadeOut('fast');
+            $(this).children(".backPanel").fadeToggle('fast', function(){
+              centerDiv();
+              $(this).children(".centered-block").fadeIn('fast');
             });
+          });
+
+          $(window).resize(function () {
+            centerDiv();
+          });
+          centerDiv();
         });
+
+        function centerDiv() {
+          $(".centered-block").each(function() {
+            var divH = $(this).innerHeight()/2;
+            var parentH = $(this).parent().innerHeight()/2;
+            var divW = $(this).innerWidth()/2;
+            var parentW = $(this).parent().innerWidth()/2;
+            $(this).css({top: (parentH-divH)});
+            //$(this).css({left: (parentW-divW)});
+          });
+        }
+
+        $(window).load(function(){
+          // center div call
+          centerDiv();
+        });
+  
     </script>
 
 <!--#include virtual="/it/next/html/static/static_footer.html"-->

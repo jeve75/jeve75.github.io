@@ -474,10 +474,27 @@ Additional Styles (required)
 }
 
 /* SPECS */
-.spec {
-	width: 25%;
-	min-height: 300px;
-	height: auto;
+
+.spec.uno{
+	background: url('../images/spec-1.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.uno:hover {
+  background-image: url('../images/spec-1-over.png');
+}
+.spec.due{
+	background: url('../images/spec-2.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.due:hover {
+  background-image: url('../images/spec-2-over.png');
+}
+.spec.tre{
+	background: url('../images/spec-3.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.tre:hover {
+  background-image: url('../images/spec-3-over.png');
 }
 .spec.quattro{
 	background: url('../images/spec-4.png') no-repeat center top;
@@ -486,7 +503,93 @@ Additional Styles (required)
 .spec.quattro:hover {
   background-image: url('../images/spec-4-over.png');
 }
+.spec.cinque{
+	background: url('../images/spec-5.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.cinque:hover {
+  background-image: url('../images/spec-5-over.png');
+}
+.spec.sei{
+	background: url('../images/spec-6.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.sei:hover {
+  background-image: url('../images/spec-6-over.png');
+}
+.spec.sette{
+	background: url('../images/spec-7.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.sette:hover {
+  background-image: url('../images/spec-7-over.png');
+}
+.spec.otto{
+	background: url('../images/spec-8.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.otto:hover {
+  background-image: url('../images/spec-8-over.png');
+}
+.spec.nove{
+	background: url('../images/spec-9.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.nove:hover {
+  background-image: url('../images/spec-9-over.png');
+}
+.spec.dieci{
+	background: url('../images/spec-10.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.dieci:hover {
+  background-image: url('../images/spec-10-over.png');
+}
+.spec.undici{
+	background: url('../images/spec-11.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.undici:hover {
+  background-image: url('../images/spec-11-over.png');
+}
+.spec.dodici{
+	background: url('../images/spec-12.png') no-repeat center top;
+    transition: 0.5s;
+}
+.spec.dodici:hover {
+  background-image: url('../images/spec-12-over.png');
+}
 .backPanel{
 	display: none;
-	color: #ffffff;
+	color: #353535;
+	background-color: #fff;
+	height: auto;
+	min-height: 300px;
+	font-size: 18px
+}
+p.specsmall{
+	font-size: 14px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.spec ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.spec li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+.spec li:before {
+    content: "• ";
+    color: #0689d9; /* or whatever color you prefer */
+}
+.spec .centered-block{
+	position: absolute;
+	margin: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	vertical-align: middle;
+	display: none;
 }

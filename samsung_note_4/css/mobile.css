@@ -29,6 +29,11 @@
 	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
 		height: 120px !important;
 	}
+	.spec {
+		width: 100%;
+		min-height: 300px;
+		height: auto;
+	}
 }
 @media(min-width:768px){
 	.mobile{display: none;}
@@ -56,6 +61,11 @@
 	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
 		height: 120px !important;
 	}
+	.spec {
+		width: 100%;
+		min-height: 300px;
+		height: auto;
+	}
 }
 @media(min-width:992px){
 	.jumbotron.menu img {
@@ -66,6 +76,11 @@
 	}
 	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
 		height: 120px !important;
+	}
+	.spec {
+		width: 25%;
+		min-height: 300px;
+		height: auto;
 	}
 }
 @media(min-width:1200px){
@@ -78,5 +93,10 @@
 	}
 	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
 		height: 60px !important;
+	}
+	.spec {
+		width: 25%;
+		min-height: 300px;
+		height: auto;
 	}
 }
