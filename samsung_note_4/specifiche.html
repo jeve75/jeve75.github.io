@@ -53,20 +53,24 @@
       <div class="container post fullwidth">
         <div class="row">
           <div class="col-md-3 bcplayer spec quattro">
-          </div>
-          <div class="col-md-3 bcplayer spec quattro">
-            <div class="quickFlip">
-              <div class="blackPanel">
-                <a href="#" class="quickFlipCta">Click</a>
-              </div>
-              <div class="redPanel">
-                  <p><a href="#" class="quickFlipCta">Click</a>
-              </div>
+            <div class="backPanel">
+              close
             </div>
           </div>
           <div class="col-md-3 bcplayer spec quattro">
+            <div class="backPanel">
+              close
+            </div>
           </div>
           <div class="col-md-3 bcplayer spec quattro">
+            <div class="backPanel">
+              close
+            </div>
+          </div>
+          <div class="col-md-3 bcplayer spec quattro">
+            <div class="backPanel">
+              close
+            </div>
           </div>
         </div>
 
@@ -92,8 +96,10 @@
                 offset: 100
                });
 
-            $(function() {
-                $('.quickFlip').quickFlip();
+            $(".quattro").click(function(){
+              console.log("cliccato");
+              $(".quattro").children(".backPanel").fadeOut('fast');
+              $(this).children(".backPanel").fadeIn('fast');
             });
         });
     </script>

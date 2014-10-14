@@ -486,3 +486,7 @@ Additional Styles (required)
 .spec.quattro:hover {
   background-image: url('../images/spec-4-over.png');
 }
+.backPanel{
+	display: none;
+	color: #ffffff;
+}
