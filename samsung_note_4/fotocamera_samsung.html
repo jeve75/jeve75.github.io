@@ -254,6 +254,18 @@ addNavState('feature','note4');
     <script src="js/viewportchecker.js"></script>
 
     <script type="text/javascript">
+
+        function centerDiv() {
+          $(".centered-block").each(function() {
+            var divH = $(this).innerHeight()/2;
+            var parentH = $(this).parent().innerHeight()/2;
+            var divW = $(this).innerWidth()/2;
+            var parentW = $(this).parent().innerWidth()/2;
+            $(this).css({top: (parentH-divH)});
+            //$(this).css({left: (parentW-divW)});
+          });
+        }
+        
         jQuery(document).ready(function() {
             jQuery('.post, .post2, .post3').addClass("ahidden").viewportChecker({
                 classToAdd: 'avisible animated fadeIn',
@@ -280,12 +292,27 @@ addNavState('feature','note4');
               owl.trigger('owl.prev');
             })
 
-            jQuery(".slide_1").fadeIn( "slow" );
+            jQuery(".slide_1").fadeIn( "slow", function() {
+                // Animation complete
+                centerDiv();
+              });
             $(".s1,.s2").click(function(){
               $(".s1,.s2").parent().parent().parent().toggleClass("active");
               $(".slide_1").fadeToggle('slow');
               $(".slide_2").fadeToggle('slow');
             });
+
+        $(window).resize(function () {
+              centerDiv();
+            });
+          centerDiv();
+        });
+
+        
+        $(window).bind('resize', function() {}).trigger('resize');
+
+        $(window).load(function(){
+            centerDiv();
         });
     </script>
 
