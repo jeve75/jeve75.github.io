@@ -158,7 +158,7 @@
 <![endif]-->
 
 <!-- back to top button : this button's omni_call code changes by script -->
-<a id="jump_to" class="jump_to" href="#" onclick="omni_call('note4hub','note4hub:jump to:home');">Jump to top</a>
+<!-- <a id="jump_to" class="jump_to" href="#" onclick="omni_call('note4hub','note4hub:jump to:home');">Jump to top</a> -->
 <!-- We love to hear button -->
 <!-- <a id="we_love" data-reveal-id="myModal2" class="we_love" href="#" onclick="omni_call('note4hub','note4hub:link_preregistration');"><span class="label"><b>Pre-Registrazione</b></span></a> -->
 <div id="myModal2" class="reveal-modal">
@@ -328,7 +328,7 @@ addNavState('feature','note4');
 
         $("#scorri").click(function() {
 		    $('html, body').animate({
-		        scrollTop: $("#desktop").offset().top - $("#pro_header").height()
+		        scrollTop: $("#desktop").offset().top - $("#pro_header").height() -12px
 		    }, 2000);
 		});
       });
