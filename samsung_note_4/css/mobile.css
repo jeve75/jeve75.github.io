@@ -61,8 +61,8 @@
 		max-width: 35% !important;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title {
-		font-size: 30px;
-		line-height: 24px;
+		font-size: 30px !important;
+		line-height: 24px !important;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
@@ -120,8 +120,8 @@
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 		color: #484848;
-		font-size: 40px;
-		line-height: 38px;
+		font-size: 40px !important;
+		line-height: 38px !important;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
@@ -158,8 +158,8 @@
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 		color: #484848;
-		font-size: 40px;
-		line-height: 38px;
+		font-size: 40px !important;
+		line-height: 38px !important;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
@@ -196,8 +196,8 @@
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 		color: #484848;
-		font-size: 40px;
-		line-height: 38px;
+		font-size: 40px !important;
+		line-height: 38px !important;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{

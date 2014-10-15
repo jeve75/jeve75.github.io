@@ -111,7 +111,7 @@
 	display: block;
 	z-index: 999;
 	width: 100%;
-	font-size: 20px !important;
+	font-size: 20px;
 	padding: 0px;
 	margin: 0px;
 	margin-top: 15px;
