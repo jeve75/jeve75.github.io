@@ -33,9 +33,6 @@
 		max-height: 300px;
 		max-width: 360px;
 	}
-	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
-  		height: 90px !important;
- 	}
 	.spec {
 		width: 100%;
 		min-height: 300px;
@@ -95,9 +92,6 @@
 	.full.spen, .full.display{
 		max-height: 620px;		
 	}
-	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
-		height: 110px !important;
-	}
 	.spec {
 		width: 100%;
 		min-height: 300px;
@@ -142,9 +136,6 @@
 	.full.spen, .full.display{
 		max-height: 620px;		
 	}
-	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
-		height: 110px !important;
-	}
 	.spec {
 		width: 25%;
 		min-height: 300px;
@@ -182,9 +173,6 @@
 	}
 	.container {
 		width: 1050px !important;
-	}
-	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
-		height: 60px !important;
 	}
 	.spec {
 		width: 25%;
