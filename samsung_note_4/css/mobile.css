@@ -54,6 +54,17 @@
 	.container.fullwidth{
 		width: 100% !important;
 	}
+	.ss_samsung .ss-carousel .inner.cheilsx {
+		margin-top: 6% !important;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title {
+		font-size: 30px;
+		line-height: 24px;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
+	{
+		font-size: 16px !important;
+	}
 }
 @media(min-width:768px){
 	.mobile{display: none;}
@@ -98,6 +109,18 @@
 	.container.fullwidth{
 		width: 100% !important;
 	}
+	.ss_samsung .ss-carousel .inner.cheilsx {
+		margin-top: 6% !important;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
+		color: #484848;
+		font-size: 40px;
+		line-height: 38px;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
+	{
+		font-size: 16px !important;
+	}
 }
 
 @media(min-width:992px){
@@ -120,6 +143,18 @@
 	}
 	.container.fullwidth{
 		width: 100% !important;
+	}
+	.ss_samsung .ss-carousel .inner.cheilsx {
+		margin-top: 16% !important;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
+		color: #484848;
+		font-size: 40px;
+		line-height: 38px;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
+	{
+		font-size: 16px !important;
 	}
 }
 @media(min-width:1200px){
@@ -144,6 +179,21 @@
 	.container.fullwidth{
 		width: 100% !important;
 	}
+	.ss_samsung .ss-carousel .inner.cheildx {
+		max-width: 35% !important;
+	}
+	.ss_samsung .ss-carousel .inner.cheilsx {
+		margin-top: 16% !important;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
+		color: #484848;
+		font-size: 40px;
+		line-height: 38px;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
+	{
+		font-size: 20px !important;
+	}
 }
 @media(min-width:1200px){
 	.full.displaypage, .full.batteriapage {
@@ -151,5 +201,8 @@
 	}
 	.container.fullwidth{
 		width: 100% !important;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx {
+		max-width: 25% !important;
 	}
 }

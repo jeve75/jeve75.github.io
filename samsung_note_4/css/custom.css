@@ -98,7 +98,6 @@
 	position: absolute;
 	right: 0;
 	margin-top: 10%;
-	max-width: 25% !important;
 }
 .ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 	color: #484848;
@@ -118,7 +117,9 @@
 	margin-top: 15px;
 }
 .ss_samsung .ss-carousel .inner.cheildx img{
-	margin-top:40px;
+	margin-top: 10px;
+	width: 100%;
+	max-width: 208px;
 }
 
 .display_img{
