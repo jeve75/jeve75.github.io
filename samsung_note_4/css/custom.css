@@ -225,16 +225,19 @@ html.ltr .nav nav .navigation li a:hover{
 .nav .container{padding: 0 !important;}
 .cookie_notice, .cookie_notice a.close{font-size: 16px !important;}
 .cookie_notice a.close{margin: 0 !important; font-weight:normal !important;}
+#share-tab{text-decoration: none !important;}
 #share-tab .label, .pre-register .label{font-size: 18px !important;}
 #share-tab .icon-share{font-size: 36px !important;}
+#share-tab .label{color: black;}
+#share-tab .label:hover{color: #0689d8 !important;}
 .pre-register .icon-register{font-size: 27px !important;}
+.we_love{box-sizing: content-box !important;}
+.we_love .label{font-size: 15px !important;}
 @media (max-width: 640px){
 	.pre-register .label{font-size: 14px !important;}
 	#share-tab .icon-share{font-size: 26px !important;}
+	.we_love .label{font-size: 16px !important;}
 }
-#share-tab .label{color: black;}
-#share-tab .label:hover{color: #0689d8 !important;}
-#share-tab{text-decoration: none !important;}
 
 /* CORRETTO DA CSS GLOBAL
 .ss_samsung .play-btn {position: absolute !important; margin-left: -58.5px;}
