@@ -709,3 +709,7 @@ p.specsmall{
 	width: auto;
 	max-width: 100%;
 }
+
+.owl-controls {
+	top: auto !important;
+}
