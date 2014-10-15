@@ -49,7 +49,7 @@
 		line-height: 45px;
 	}
 	.full.displaypage, .full.batteriapage {
-		margin-top: 50px;
+		margin-top: 50px !important;
 	}
 	.container.fullwidth{
 		width: 100% !important;
@@ -107,7 +107,7 @@
 		margin: auto;
 	}
 	.full.displaypage, .full.batteriapage {
-		margin-top: 50px;
+		margin-top: 50px !important;
 	}
 	.container.fullwidth{
 		width: 100% !important;
@@ -145,7 +145,7 @@
 		height: auto;
 	}
 	.full.displaypage, .full.batteriapage {
-		margin-top: 50px;
+		margin-top: 50px !important;
 	}
 	.container.fullwidth{
 		width: 100% !important;
@@ -183,7 +183,7 @@
 		height: auto;
 	}
 	.full.displaypage, .full.batteriapage {
-		margin-top: 50px;
+		margin-top:  !important;
 	}
 	.container.fullwidth{
 		width: 100% !important;
@@ -206,7 +206,7 @@
 }
 @media(min-width:1200px){
 	.full.displaypage, .full.batteriapage {
-		margin-top: 0px;
+		margin-top: 0px !important;
 	}
 	.container.fullwidth{
 		width: 100% !important;
