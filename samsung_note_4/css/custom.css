@@ -83,6 +83,11 @@
 }
 
 /* HOME ELEMENTS */
+#scorri{
+	position: absolute;
+	right: 20px;
+	top: 20%;
+}
 .ss_samsung .ss-carousel .inner.cheilsx{
 	position: absolute;
 	margin-top: 16%;

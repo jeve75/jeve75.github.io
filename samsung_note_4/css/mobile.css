@@ -1,4 +1,11 @@
 /* MEDIA QUERIES */
+@media(max-width:320px){
+	.full.spen img, .full.display img {
+	width: auto;
+	max-height: 300px;
+	max-width: 320px;
+	}
+}
 @media(max-width:767px){
 /*	.desktop{display: none;}
 	.mobile{display: block;}*/

@@ -168,7 +168,7 @@
 
 <!-- CONTENUTI -->
 <div class='hero-wrap'>
-	
+	<div class="scorri" id="scorri"><img src="images/home-_slide_scorri.png"></div>
 <!-- N4 CAROUSEL -->
 <div class="ss-carousel hero n4-carousel">
 	<div class="viewer" id="carousel-00">
@@ -259,7 +259,7 @@ addNavState('feature','note4');
 <!-- //ORIGINAL CONTENT -->
 
 <!-- cheil note 4 -->
-	<div class="desktop">
+	<div class="desktop" id="desktop">
       
       <div class="jumbotron full display">
         <div class="container post">
@@ -324,6 +324,12 @@ addNavState('feature','note4');
           classToAdd: 'avisible animated fadeIn',
           offset: 100
         });
+
+        $("#scorri").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#desktop").offset().top
+		    }, 2000);
+		});
       });
     </script>
 
