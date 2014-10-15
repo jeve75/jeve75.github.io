@@ -1,9 +1,9 @@
 /* MEDIA QUERIES */
 @media(max-width:320px){
 	.full.spen img, .full.display img {
-	width: auto;
-	max-height: 300px;
-	max-width: 320px;
+		width: auto;
+		max-height: 300px;
+		max-width: 320px;
 	}
 }
 @media(max-width:767px){
@@ -48,6 +48,9 @@
 		margin-left: 45px;
 		line-height: 45px;
 	}
+	.full.displaypage, .full.batteriapage {
+		margin-top: 50px;
+	}
 }
 @media(min-width:768px){
 	.mobile{display: none;}
@@ -86,6 +89,9 @@
 		text-align: center;
 		margin: auto;
 	}
+	.full.displaypage, .full.batteriapage {
+		margin-top: 50px;
+	}
 }
 @media(min-width:992px){
 	.jumbotron.menu img {
@@ -101,6 +107,9 @@
 		width: 25%;
 		min-height: 300px;
 		height: auto;
+	}
+	.full.displaypage, .full.batteriapage {
+		margin-top: 50px;
 	}
 }
 @media(min-width:1200px){
@@ -118,5 +127,13 @@
 		width: 25%;
 		min-height: 300px;
 		height: auto;
+	}
+	.full.displaypage, .full.batteriapage {
+		margin-top: 50px;
+	}
+}
+@media(min-width:1200px){
+	.full.displaypage, .full.batteriapage {
+		margin-top: 0px;
 	}
 }
