@@ -702,3 +702,10 @@ p.specsmall{
 	margin-right: -10px;
 	margin-top: 8px;
 }
+
+.owl-item .item img{
+	margin: auto;
+	display: block;
+	width: auto;
+	max-width: 100%;
+}
