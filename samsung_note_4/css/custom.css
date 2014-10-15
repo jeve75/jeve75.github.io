@@ -96,6 +96,11 @@
 	color: #ffffff;
 	text-align: center;
 }
+.displaypage .home_title, .batteriapage .home_title{
+	margin-top:50px;
+	margin-bottom: 10px;
+}
+
 .home_sub{
 	font-size: 20px !important;
 	color: #ffffff;
