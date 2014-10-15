@@ -31,6 +31,7 @@ body {
   margin-bottom: 0px;
   padding-top: 20px;
   position: relative;
+  /*margin-top: 50px;*/
 }
 .full.displaypage {
   background: url('../images/display_bg.png') no-repeat center center fixed; 
@@ -43,6 +44,7 @@ body {
   position: relative;
   height: auto !important;
   padding: 0px;
+  /*margin-top: 50px;*/
 }
 .full.batteriapage {
   background: url('../images/batteria_bg.png') no-repeat center center fixed; 
@@ -55,4 +57,5 @@ body {
   position: relative;
   height: auto !important;
   padding: 0px;
+  /*margin-top: 50px;*/
 }

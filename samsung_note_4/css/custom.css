@@ -102,7 +102,7 @@
 	font-size: 40px;
 	line-height: 38px;
 }
-.ss_samsung .ss-carousel .inner.cheildx .n4-h-note4{
+.ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
 	color: #484848;
 	font-size: 20px;
 }
@@ -401,6 +401,7 @@ Additional Styles (required)
 	margin: 0 !important;
 	margin-top: 25px !important;
 	padding: 0px !important;
+	margin-bottom: 60px !important;
 }
 .display .row,
 .displaypage .row,
@@ -453,6 +454,7 @@ Additional Styles (required)
 	cursor: pointer;
 	filter: alpha(opacity=100);
 	opacity: 1;
+	margin-top: 62px;
 }
 
 /* FONT STYLES */
