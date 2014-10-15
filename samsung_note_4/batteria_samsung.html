@@ -83,13 +83,13 @@
         <a href="#" id="pn_mobile_fold">Fold Navigation</a>
       </li>
       <li class="pn_feature">
-        <a href="index.html" class="has-sub" data-m="feature" onclick="omni_call('note4hub','note4hub:menu_feature');">Caratteristiche</a>
+        <a href="index.html" class="is-sub" data-m="feature" onclick="omni_call('note4hub','note4hub:menu_feature');">Caratteristiche</a>
       </li>
       <li class="pn_gallery">
-        <a href="gallery.html" class="has-sub" data-m="gallery" onclick="omni_call('note4hub','note4hub:menu_gallery');">Galleria</a>
+        <a href="gallery.html" class="is-sub" data-m="gallery" onclick="omni_call('note4hub','note4hub:menu_gallery');">Galleria</a>
       </li>
       <li class="pn_spec">
-        <a href="specifiche.html" class="has-sub" data-m="spec" onclick="omni_call('note4hub','note4hub:menu_spec');">Specifiche</a>
+        <a href="specifiche.html" class="is-sub" data-m="spec" onclick="omni_call('note4hub','note4hub:menu_spec');">Specifiche</a>
       </li>
     </ul>
   </nav>
@@ -191,7 +191,7 @@ addNavState('feature','note4');
 
 <!-- cheil note 4 -->
     <div class="jumbotron desktop batteriapage full">
-      <div class="close"><img src="images/close_button_dark.png"></div>
+      <div class="close"><a href="index.html"><img src="images/close_button_dark.png"></a></div>
       <div class="container">
         <div class="row">
           <p class="home_title dark">Batteria potenziata</p>
@@ -199,20 +199,20 @@ addNavState('feature','note4');
 
         <div class="row">
           <div class="col-xs-1 col-md-1">
-            <div class="customNavigation">
+            <!-- <div class="customNavigation">
               <a class="btn prev"><img src="images/arrow_mini_left.png"></a>
-            </div>
+            </div> -->
           </div>
           <div class="col-xs-10 col-md-10">
-            <div id="owl-demo" class="owl-carousel">
+            <div id="owl-demo2" class="owl-carousel">
               <div class="item"> <img src="images/batteria_img_1.png"></div>
               <div class="item"> <img src="images/batteria_img_2.png"></div>
             </div>
           </div>
           <div class="col-xs-1 col-md-1">
-            <div class="customNavigation">
+           <!--  <div class="customNavigation">
               <a class="btn next"><img src="images/arrow_mini_right.png"></a>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -251,12 +251,8 @@ addNavState('feature','note4');
 
     <script type="text/javascript">
         jQuery(document).ready(function() {
-            jQuery('.post, .post2, .post3').addClass("ahidden").viewportChecker({
-              classToAdd: 'avisible animated fadeIn',
-              offset: 100
-            });
 
-            var owl = $("#owl-demo");
+            var owl = $("#owl-demo2");
 
             owl.owlCarousel({
 
@@ -264,17 +260,23 @@ addNavState('feature','note4');
               itemsDesktop : [1000,1], //5 items between 1000px and 901px
               itemsDesktopSmall : [900,1], // 3 items betweem 900px and 601px
               itemsTablet: [600,1], //2 items between 600 and 0;
-              itemsMobile : true // itemsMobile disabled - inherit from itemsTablet option
-              
+              itemsMobile : true, // itemsMobile disabled - inherit from itemsTablet option
+              responsive: true,
+              pagination: true,
+              navigation:true,
+              navigationText: [
+                "<img src='images/arrow_mini_left.png'>",
+                "<img src='images/arrow_mini_right.png'>"
+              ]
             });
 
             // Custom Navigation Events
-            $(".next").click(function(){
-              owl.trigger('owl.next');
-            })
-            $(".prev").click(function(){
-              owl.trigger('owl.prev');
-            })
+            // $(".next").click(function(){
+            //   owl.trigger('owl.next');
+            // })
+            // $(".prev").click(function(){
+            //   owl.trigger('owl.prev');
+            // })
         });
     </script>
 

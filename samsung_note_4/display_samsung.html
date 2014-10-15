@@ -83,13 +83,13 @@
         <a href="#" id="pn_mobile_fold">Fold Navigation</a>
       </li>
       <li class="pn_feature">
-        <a href="index.html" class="has-sub" data-m="feature" onclick="omni_call('note4hub','note4hub:menu_feature');">Caratteristiche</a>
+        <a href="index.html" class="is-sub" data-m="feature" onclick="omni_call('note4hub','note4hub:menu_feature');">Caratteristiche</a>
       </li>
       <li class="pn_gallery">
-        <a href="gallery.html" class="has-sub" data-m="gallery" onclick="omni_call('note4hub','note4hub:menu_gallery');">Galleria</a>
+        <a href="gallery.html" class="is-sub" data-m="gallery" onclick="omni_call('note4hub','note4hub:menu_gallery');">Galleria</a>
       </li>
       <li class="pn_spec">
-        <a href="specifiche.html" class="has-sub" data-m="spec" onclick="omni_call('note4hub','note4hub:menu_spec');">Specifiche</a>
+        <a href="specifiche.html" class="is-sub" data-m="spec" onclick="omni_call('note4hub','note4hub:menu_spec');">Specifiche</a>
       </li>
     </ul>
   </nav>
@@ -199,9 +199,9 @@ addNavState('feature','note4');
 
         <div class="row">
           <div class="col-xs-1 col-md-1">
-            <div class="customNavigation">
+            <!-- <div class="customNavigation">
               <a class="btn prev"><img src="images/arrow_mini_left.png"></a>
-            </div>
+            </div> -->
           </div>
           <div class="col-xs-10 col-md-10">
             <div id="owl-demo" class="owl-carousel">
@@ -222,9 +222,9 @@ addNavState('feature','note4');
             </div>
           </div>
           <div class="col-xs-1 col-md-1">
-            <div class="customNavigation">
+            <!-- <div class="customNavigation">
               <a class="btn next"><img src="images/arrow_mini_right.png"></a>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -232,9 +232,9 @@ addNavState('feature','note4');
 
           <div class="row">
             <div class="col-xs-1 col-md-1 centered-block">
-              <div class="customNavigation">
+             <!--  <div class="customNavigation">
                 <a class="btn prev2"><img src="images/arrow_mini_left.png"></a>
-              </div>
+              </div> -->
             </div>
             <div class="col-xs-10 col-md-10">
               <div id="owl-demo2" class="owl-carousel">
@@ -243,9 +243,9 @@ addNavState('feature','note4');
               </div>
             </div>
             <div class="col-xs-1 col-md-1 centered-block">
-              <div class="customNavigation">
+              <!-- <div class="customNavigation">
                 <a class="btn next2"><img src="images/arrow_mini_right.png"></a>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -317,22 +317,8 @@ addNavState('feature','note4');
     <script src="js/viewportchecker.js"></script>
 
     <script type="text/javascript">
-        function centerDiv() {
-          $(".centered-block").each(function() {
-            var divH = $(this).innerHeight()/2;
-            var parentH = $(this).parent().innerHeight()/2;
-            var divW = $(this).innerWidth()/2;
-            var parentW = $(this).parent().innerWidth()/2;
-            $(this).css({top: (parentH-divH)});
-            //$(this).css({left: (parentW-divW)});
-          });
-        }
 
         jQuery(document).ready(function() {
-            jQuery('.post, .post2, .post3').addClass("ahidden").viewportChecker({
-              classToAdd: 'avisible animated fadeIn',
-              offset: 100
-            });
 
             var owl = $("#owl-demo");
             var owl2 = $("#owl-demo2");
@@ -344,60 +330,51 @@ addNavState('feature','note4');
               itemsDesktopSmall : [900,2], // 3 items betweem 900px and 601px
               itemsTablet: [600,1], //2 items between 600 and 0;
               itemsMobile : true, // itemsMobile disabled - inherit from itemsTablet option
-              responsive: true
+              responsive: true,
+              pagination: false,
+              navigation:true,
+              navigationText: [
+                "<img src='images/arrow_mini_left.png'>",
+                "<img src='images/arrow_mini_right.png'>"
+              ]
 
             });
 
             owl2.owlCarousel({
               singleItem:true,
-              items : 1
+              items : 1,
+              responsive: true,
+              navigation:true,
+              navigationText: [
+                "<img src='images/arrow_mini_left.png'>",
+                "<img src='images/arrow_mini_right.png'>"
+              ]
             });
 
             // Custom Navigation Events
-            $(".next").click(function(){
-              owl.trigger('owl.next');
-            })
-            $(".prev").click(function(){
-              owl.trigger('owl.prev');
-            })
+            // $(".next").click(function(){
+            //   owl.trigger('owl.next');
+            // })
+            // $(".prev").click(function(){
+            //   owl.trigger('owl.prev');
+            // })
 
-            $(".next2").click(function(){
-              owl2.trigger('owl.next');
-            })
-            $(".prev2").click(function(){
-              owl2.trigger('owl.prev');
-            })
+            // $(".next2").click(function(){
+            //   owl2.trigger('owl.next');
+            // })
+            // $(".prev2").click(function(){
+            //   owl2.trigger('owl.prev');
+            // })
 
 
-            jQuery(".slide_1").fadeIn( "slow", function() {
-                // Animation complete
-                centerDiv();
-              });
+            jQuery(".slide_1").fadeIn( "slow");
             $(".s1,.s2").click(function(){
               $(".s1,.s2").parent().parent().parent().toggleClass("active");
-              $(".slide_1").fadeToggle('slow', function() {
-                // Animation complete
-                centerDiv();
-              });
-              $(".slide_2").fadeToggle('slow', function() {
-                // Animation complete
-                centerDiv();
-              });
+              $(".slide_1").fadeToggle('slow');
+              $(".slide_2").fadeToggle('slow');
             });
 
-            $(window).resize(function () {
-              centerDiv();
-            });
-          centerDiv();
         });
-
-        
-        $(window).bind('resize', function() {}).trigger('resize');
-
-        $(window).load(function(){
-            centerDiv();
-        });
-
     </script>
 
 <!--#include virtual="/it/next/html/static/static_footer.html"-->

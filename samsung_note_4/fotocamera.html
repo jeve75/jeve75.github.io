@@ -60,20 +60,20 @@
 
         <div class="row">
           <div class="col-xs-1 col-md-1">
-            <div class="customNavigation">
+            <!-- <div class="customNavigation">
               <a class="btn prev"><img src="images/arrow_mini_left.png"></a>
-            </div>
+            </div> -->
           </div>
           <div class="col-xs-10 col-md-10">
-            <div id="owl-demo" class="owl-carousel">
+            <div id="owl-demo2" class="owl-carousel">
               <div class="item"> <img src="images/fotocamera_img_1.png"></div>
               <div class="item"> <img src="images/fotocamera_img_2.png"></div>
             </div>
           </div>
           <div class="col-xs-1 col-md-1">
-            <div class="customNavigation">
+            <!-- <div class="customNavigation">
               <a class="btn next"><img src="images/arrow_mini_right.png"></a>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -172,12 +172,8 @@
 
     <script type="text/javascript">
         jQuery(document).ready(function() {
-            jQuery('.post, .post2, .post3').addClass("ahidden").viewportChecker({
-                classToAdd: 'avisible animated fadeIn',
-                offset: 100
-               });
 
-            var owl = $("#owl-demo");
+            var owl = $("#owl-demo2");
 
             owl.owlCarousel({
 
@@ -185,17 +181,23 @@
               itemsDesktop : [1000,1], //5 items between 1000px and 901px
               itemsDesktopSmall : [900,1], // 3 items betweem 900px and 601px
               itemsTablet: [600,1], //2 items between 600 and 0;
-              itemsMobile : true // itemsMobile disabled - inherit from itemsTablet option
-              
+              itemsMobile : true, // itemsMobile disabled - inherit from itemsTablet option
+              responsive: true,
+              pagination: true,
+              navigation:true,
+              navigationText: [
+                "<img src='images/arrow_mini_left.png'>",
+                "<img src='images/arrow_mini_right.png'>"
+              ]
             });
 
             // Custom Navigation Events
-            $(".next").click(function(){
-              owl.trigger('owl.next');
-            })
-            $(".prev").click(function(){
-              owl.trigger('owl.prev');
-            })
+            // $(".next").click(function(){
+            //   owl.trigger('owl.next');
+            // })
+            // $(".prev").click(function(){
+            //   owl.trigger('owl.prev');
+            // })
 
             jQuery(".slide_1").fadeIn( "slow" );
             $(".s1,.s2").click(function(){
