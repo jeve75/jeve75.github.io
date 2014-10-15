@@ -379,8 +379,14 @@ addNavState('feature','note4');
               });
             $(".s1,.s2").click(function(){
               $(".s1,.s2").parent().parent().parent().toggleClass("active");
-              $(".slide_1").fadeToggle('slow');
-              $(".slide_2").fadeToggle('slow');
+              $(".slide_1").fadeToggle('slow', function() {
+                // Animation complete
+                centerDiv();
+              });
+              $(".slide_2").fadeToggle('slow', function() {
+                // Animation complete
+                centerDiv();
+              });
             });
 
             $(window).resize(function () {
