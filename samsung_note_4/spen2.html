@@ -56,61 +56,42 @@
           <p class="home_title dark">Batteria potenziata</p>
         </div>
 
-        <div id="owl-demo" class="owl-carousel">
-          
-          <div class="item"><h1>1</h1></div>
-          <div class="item"><h1>2</h1></div>
-          <div class="item"><h1>3</h1></div>
-          <div class="item"><h1>4</h1></div>
-          <div class="item"><h1>5</h1></div>
-          <div class="item"><h1>6</h1></div>
-          <div class="item"><h1>7</h1></div>
-          <div class="item"><h1>8</h1></div>
-          <div class="item"><h1>9</h1></div>
-          <div class="item"><h1>10</h1></div>
-          <div class="item"><h1>11</h1></div>
-          <div class="item"><h1>12</h1></div>
-          <div class="item"><h1>13</h1></div>
-          <div class="item"><h1>14</h1></div>
-          <div class="item"><h1>15</h1></div>
-          <div class="item"><h1>16</h1></div>
-
-        </div>
-        <div class="customNavigation">
-          <a class="btn prev">Previous</a>
-          <a class="btn next">Next</a>
-          <a class="btn play">Autoplay</a>
-          <a class="btn stop">Stop</a>
-        </div>
-
         <div class="row">
-          <div class="well">
-            <div class="col-md-offset-2 col-md-8">
-              <div class="responsive">
-                <div class="thumbnail active gray">
-                  <div class="caption">
-                    <h3><a href="#" class="s1" alt="funzioni penna">funzioni penna</a></h3>
-                  </div>
-                </div>  
-                <div class="thumbnail gray">
-                  <div class="caption">
-                    <h3><a href="#" class="s2" alt="funzione mouse">funzione mouse</a></h3>
-                  </div>
+          <div class="col-xs-1 col-md-1">
+            <div class="customNavigation">
+              <a class="btn prev"><img src="images/arrow_mini_left.png"></a>
+            </div>
+          </div>
+          <div class="col-xs-10 col-md-10">
+            <div id="owl-demo" class="owl-carousel">
+              <div class="item"><div class="thumbnail active gray">
+                <div class="caption">
+                  <h3><a href="#" class="s1" alt="funzioni penna">funzioni penna</a></h3>
                 </div>
-                <div class="thumbnail gray">
-                  <div class="caption">
-                    <h3><a href="#" class="s3" alt="selezione smart">selezione smart</a></h3>
-                  </div>
+              </div></div>
+              <div class="item"><div class="thumbnail gray">
+                <div class="caption">
+                  <h3><a href="#" class="s2" alt="funzioni penna">come un mouse</a></h3>
                 </div>
-                <div class="thumbnail gray">
-                  <div class="caption">
-                    <h3><a href="#" class="s4" alt="photo note">photo note</a></h3>
-                  </div>
+              </div></div>
+              <div class="item"><div class="thumbnail gray">
+                <div class="caption">
+                  <h3><a href="#" class="s3" alt="funzioni penna">selezione smart</a></h3>
                 </div>
-              </div><!-- End Responsive -->
-            </div><!-- End col -->
-          </div><!-- End Well -->
-        </div><!-- End row -->
+              </div></div>
+              <div class="item"><div class="thumbnail gray">
+                <div class="caption">
+                  <h3><a href="#" class="s4" alt="funzioni penna">photo note</a></h3>
+                </div>
+              </div></div>
+            </div>
+          </div>
+          <div class="col-xs-1 col-md-1">
+            <div class="customNavigation">
+              <a class="btn next"><img src="images/arrow_mini_right.png"></a>
+            </div>
+          </div>
+        </div>
 
         <div class="slide_1">
           <div class="row">
@@ -336,39 +317,6 @@
               offset: 100
             });
 
-            $('.responsive').slick({
-              dots: false,
-              infinite: true,
-              speed: 300,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
-            });
-
             $('.responsive2').slick({
               dots: true,
               infinite: true,
@@ -379,11 +327,11 @@
 
             owl.owlCarousel({
 
-              items : 10, //10 items above 1000px browser width
-              itemsDesktop : [1000,5], //5 items between 1000px and 901px
+              items : 4, //10 items above 1000px browser width
+              itemsDesktop : [1000,3], //5 items between 1000px and 901px
               itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
-              itemsTablet: [600,2], //2 items between 600 and 0;
-              itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+              itemsTablet: [600,1], //2 items between 600 and 0;
+              itemsMobile : true // itemsMobile disabled - inherit from itemsTablet option
               
             });
 
@@ -393,12 +341,6 @@
             })
             $(".prev").click(function(){
               owl.trigger('owl.prev');
-            })
-            $(".play").click(function(){
-              owl.trigger('owl.play',1000);
-            })
-            $(".stop").click(function(){
-              owl.trigger('owl.stop');
             })
 
             jQuery(".slide_1").fadeIn( "slow" );
