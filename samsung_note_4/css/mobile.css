@@ -6,6 +6,9 @@
 		max-width: 320px;
 	}
 }
+@media (max-width: 640px){
+  .row{height: 120px;}
+}
 @media(max-width:767px){
 /*	.desktop{display: none;}
 	.mobile{display: block;}*/
