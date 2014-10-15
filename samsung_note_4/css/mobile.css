@@ -51,6 +51,9 @@
 	.full.displaypage, .full.batteriapage {
 		margin-top: 50px;
 	}
+	.container.fullwidth{
+		width: 100% !important;
+	}
 }
 @media(min-width:768px){
 	.mobile{display: none;}
@@ -92,7 +95,11 @@
 	.full.displaypage, .full.batteriapage {
 		margin-top: 50px;
 	}
+	.container.fullwidth{
+		width: 100% !important;
+	}
 }
+
 @media(min-width:992px){
 	.jumbotron.menu img {
 		display: block;
@@ -110,6 +117,9 @@
 	}
 	.full.displaypage, .full.batteriapage {
 		margin-top: 50px;
+	}
+	.container.fullwidth{
+		width: 100% !important;
 	}
 }
 @media(min-width:1200px){
@@ -131,9 +141,15 @@
 	.full.displaypage, .full.batteriapage {
 		margin-top: 50px;
 	}
+	.container.fullwidth{
+		width: 100% !important;
+	}
 }
 @media(min-width:1200px){
 	.full.displaypage, .full.batteriapage {
 		margin-top: 0px;
+	}
+	.container.fullwidth{
+		width: 100% !important;
 	}
 }
