@@ -83,6 +83,27 @@
 }
 
 /* HOME ELEMENTS */
+.ss_samsung .ss-carousel .inner.cheilsx{
+	position: absolute;
+	margin-top: 16%;
+}
+.ss_samsung .ss-carousel .inner.cheildx{
+	position: absolute;
+	right: 0;
+	margin-top: 10%;
+}
+.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
+	color: #484848;
+	font-size: 40px;
+}
+.ss_samsung .ss-carousel .inner.cheildx .n4-h-note4{
+	color: #484848;
+	font-size: 20px;
+}
+.ss_samsung .ss-carousel .inner.cheildx img{
+	margin-top:40px;
+}
+
 .display_img{
 	display: block;
 	left: 0;
