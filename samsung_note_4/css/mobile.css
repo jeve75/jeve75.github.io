@@ -3,18 +3,18 @@
 	.full.spen img, .full.display img {
 		width: auto;
 		max-height: 300px;
-		max-width: 320px;
+		max-width: 320px !important;
 	}
 	.ss_samsung .ss-carousel .inner.cheilsx img{
 		width: 50%;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title {
-		font-size: 20px !important;
-		line-height: 20px !important;
+		font-size: 20px ;
+		line-height: 20px ;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
-		display: none;
+		display: none !important;
 	}
 	/* fix issue samsung s2*/
 	body, .viewer,  .viewer li{
@@ -29,8 +29,8 @@
 		display: none;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title {
-		font-size: 26px !important;
-		line-height: 24px !important;
+		font-size: 26px ;
+		line-height: 24px ;
 	}
 }
 /*@media (max-width: 640px){
@@ -91,12 +91,12 @@
 		text-align: right;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title {
-		font-size: 30px !important;
-		line-height: 24px !important;
+		font-size: 30px ;
+		line-height: 24px ;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
-		font-size: 16px !important;
+		font-size: 16px ;
 		display: block;
 	}
 }
@@ -151,12 +151,12 @@
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 		color: #484848;
-		font-size: 40px !important;
-		line-height: 38px !important;
+		font-size: 40px ;
+		line-height: 38px ;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
-		font-size: 16px !important;
+		font-size: 16px ;
 		display: block;
 	}
 }
@@ -190,12 +190,12 @@
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 		color: #484848;
-		font-size: 40px !important;
-		line-height: 38px !important;
+		font-size: 40px ;
+		line-height: 38px ;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
-		font-size: 16px !important;
+		font-size: 16px ;
 		display: block;
 	}
 }
@@ -229,12 +229,12 @@
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 		color: #484848;
-		font-size: 40px !important;
-		line-height: 38px !important;
+		font-size: 40px ;
+		line-height: 38px ;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
-		font-size: 20px !important;
+		font-size: 20px ;
 	}
 }
 @media(min-width:1200px){
