@@ -190,15 +190,21 @@
     <script type="text/javascript">
         jQuery(document).ready(function() {
 
-          $(".spec").click(function(){
-            centerDiv();
-            var questo = $(this);
-            $(".backPanel,.centered-block").fadeOut('fast');
-            $(this).children(".backPanel").fadeToggle('fast', function(){
-              centerDiv();
-              $(this).children(".centered-block").fadeIn('fast');
-            });
+          $(".spec").mouseover(function(){
+            console.log('over');
+            //$(".backPanel,.centered-block").hide('fast', function(){});
+            $(this).children(".backPanel").css("display","block");
           });
+
+          // $(".spec").click(function(){
+          //   centerDiv();
+          //   var questo = $(this);
+          //   $(".backPanel,.centered-block").fadeOut('fast');
+          //   $(this).children(".backPanel").fadeToggle('fast', function(){
+          //     centerDiv();
+          //     $(this).children(".centered-block").fadeIn('fast');
+          //   });
+          // });
 
           $(window).resize(function () {
             centerDiv();
