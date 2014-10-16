@@ -353,16 +353,17 @@ addNavState('spec','note4');
 					// versione jacopo
 								
 					$(".spec").mouseover(function(){
-						$(".backPanel,.centered-block").hide('fast', function(){
-							$(this).children(".backPanel").show('fast', function(){
-								centerDiv();
-								$(this).children(".centered-block").fadeIn('fast');
-							});
+						console.log('over');
+						$(".backPanel,.centered-block").hide('fast', function(){});
+						$(this).children(".backPanel").show('fast', function(){
+							console.log('children');
+							centerDiv();
+							$(this).children(".centered-block").fadeIn('fast');
 						});
 					});
-					$(".spec").mouseout(function(){
-						//$(this).children(".backPanel").hide('fast');
-					});
+					// $(".spec").mouseout(function(){
+					// 	//$(this).children(".backPanel").hide('fast');
+					// });
 					
 					// $(".spec").click(function(){
 					// 	centerDiv();
