@@ -281,3 +281,8 @@
 		height: 60px !important;
 	}
 }
+@media (max-width: 1280px){
+	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
+		height: 170px;
+	}
+}
