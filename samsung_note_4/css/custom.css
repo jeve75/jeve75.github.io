@@ -667,7 +667,7 @@ p.specsmall{
     text-indent: -.7em;
 }
 .spec li:before {
-    content: "&#8226;";
+    content: "•";
     color: #0689d9; /* or whatever color you prefer */
 }
 .spec li.nolist:before {
