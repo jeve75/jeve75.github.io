@@ -165,6 +165,9 @@
 		font-size: 16px ;
 		display: block;
 	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
+		display: block;
+	}
 }
 
 @media(min-width:992px){
@@ -202,6 +205,9 @@
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text
 	{
 		font-size: 16px ;
+		display: block;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
 		display: block;
 	}
 }
@@ -242,6 +248,9 @@
 	{
 		font-size: 20px ;
 	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
+		display: block;
+	}
 }
 @media(min-width:1200px){
 	.full.displaypage, .full.batteriapage {
@@ -253,11 +262,15 @@
 	.ss_samsung .ss-carousel .inner.cheildx {
 		max-width: 25% !important;
 	}
-}
-/* FIX MENU HEIGHT */
-.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
+		display: block;
+	}
+
+	/* FIX MENU HEIGHT */
+	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
 		height: 110px !important;
 	}
+}
 @media(max-width: 640px){
 	.pro_header.is-feature, .pro_header.is-gallery, .pro_header.is-spec {
 		height: 90px !important;

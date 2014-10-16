@@ -107,7 +107,7 @@
 .ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
 	color: #484848;
 	height: auto;
-	display: block;
+	/*display: block;*/
 	z-index: 999;
 	width: 100%;
 	/*font-size: 20px;*/
