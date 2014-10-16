@@ -26,31 +26,34 @@
 		<title>Note 4</title>
 
 		<!-- Bootstrap core CSS -->
-		<link href="../css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
 
 		<!-- slick -->
-		<link href="../css/slick.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 
 		<!-- Custom styles for this template -->
-		<link href="../css/carousel.css" rel="stylesheet">
-		<link href="../css/acc-wizard.min.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+		<link href="css/acc-wizard.min.css" rel="stylesheet">
 
 		<!-- Custom CSS -->
-		<link href="../css/the-big-picture.css" rel="stylesheet">
-		<link href="../css/mobile.css" rel="stylesheet">
-		<link href="../css/custom.css" rel="stylesheet">
-		<link href="../css/slide.css" rel="stylesheet">
-		<link href="../css/grid.css" rel="stylesheet">
-		<link href="../css/animate.css" rel="stylesheet">
-		<link href="../css/animate4.css" rel="stylesheet">
-		<link href="../css/basic-quickflips.css" rel="stylesheet"/>
+		<link href="css/the-big-picture.css" rel="stylesheet">
+		<link href="css/mobile.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/slide.css" rel="stylesheet">
+		<link href="css/grid.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/animate4.css" rel="stylesheet">
+
+		<!-- Owl Carousel Assets -->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl.theme.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+		<link href="css/sticky-footer-navbar.css" rel="stylesheet">
 
 		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-		<script src="../../js/ie-emulation-modes-warning.js"></script>
+		<script src="js/ie-emulation-modes-warning.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -74,19 +77,19 @@
 <!-- promotion GNB -->
 <div id="pro_header" class="pro_header is-fold" data-space="20"> <!-- can change letter space value from 1 to 20 -->
 	<nav>
-		<a href="../../index.html" class="pro_h" onclick="omni_call('note4hub','note4hub:menu_galaxynote4main');"><h1></h1></a>
+		<a href="index.html" class="pro_h" onclick="omni_call('note4hub','note4hub:menu_galaxynote4main');"><h1></h1></a>
 		<ul class="pro_nav" id="pro_nav">
 			<li class="pn_mobile_fold">
 				<a href="#" id="pn_mobile_fold">Fold Navigation</a>
 			</li>
 			<li class="pn_feature">
-				<a href="../../index.html" class="" data-m="feature" onclick="omni_call('note4hub','note4hub:menu_feature');">Caratteristiche</a>
+				<a href="index.html" class="" data-m="feature" onclick="omni_call('note4hub','note4hub:menu_feature');">Caratteristiche</a>
 			</li>
 			<li class="pn_gallery">
-				<a href="../../gallery/index.html" class="" data-m="gallery" onclick="omni_call('note4hub','note4hub:menu_gallery');">Galleria</a>
+				<a href="gallery.html" class="" data-m="gallery" onclick="omni_call('note4hub','note4hub:menu_gallery');">Galleria</a>
 			</li>
 			<li class="pn_spec">
-				<a href="../../spec/index.html" class="" data-m="spec" onclick="omni_call('note4hub','note4hub:menu_spec');">Specifiche</a>
+				<a href="specifiche.html" class="" data-m="spec" onclick="omni_call('note4hub','note4hub:menu_spec');">Specifiche</a>
 			</li>
 		</ul>
 	</nav>
@@ -174,7 +177,7 @@
 
 <div id="pageScroller"></div>
 <script>
-addNavState('spec','note4');
+addNavState('feature','note4');
 </script>
 
 
@@ -186,140 +189,112 @@ addNavState('spec','note4');
 
 <!-- cheil note 4 -->
 		<div class="jumbotron desktop displaypage full">
-			<!-- <div class="close"><img src="images/close_button.png"></div> -->
-
-			<div class="container post fullwidth">
+			<div class="close"><a href="index.html"><img src="images/close_button.png"></a></div>
+			<div class="container">
 				<div class="row">
-					<div class="col-md-3 bcplayer spec uno">
-						<div class="backPanel">
-							<div class="spec-title">Dimensioni</div>
-							<div class="centered-block">
-							<ul>
-								<li class="nolist">153,5 X 78,6 X 8,5 mm / 176 g</li>
-							</ul>
-						</div>
-						</div>
+					<p class="home_title">Display Quad HD Super AMOLED 5,7’’</p>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-1 col-md-1">
+						<!-- <div class="customNavigation">
+							<a class="btn prev"><img src="images/arrow_mini_left.png"></a>
+						</div> -->
 					</div>
-					<div class="col-md-3 bcplayer spec due">
-						<div class="backPanel">
-							<div class="spec-title">Display</div>
-							<div class="centered-block">
-							<ul>
-								<li class="nolist">Quad HD Super AMOLED (2560 x 1440) da 5,7”</li>
-							</ul>
+					<div class="col-xs-10 col-md-10">
+						<div id="owl-demo" class="owl-carousel owl-theme">
+							<div class="item">
+								<div class="thumbnail active">
+									<div class="caption">
+										<h3><a href="#" class="s1" alt="dimansione e definizione">dimensione e definizione</a></h3>
+									</div>
+								</div> 
+							</div>
+							<div class="item">
+								<div class="thumbnail ">
+									<div class="caption">
+										<h3><a href="#" class="s2" alt="multischermo avanzato">multischermo avanzato</a></h3>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 bcplayer spec tre">
-						<div class="backPanel">
-							<div class="spec-title">AP</div>
-							<div class="centered-block">
-								<ul>
-									<li class="nolist">Processore Quad Core da 2,7 GHz</li>
-									<p class="specsmall nolistp">(Può variare in base al Paese e al gestore)</p>
-								</ul>
+					<div class="col-xs-1 col-md-1">
+						<!-- <div class="customNavigation">
+							<a class="btn next"><img src="images/arrow_mini_right.png"></a>
+						</div> -->
+					</div>
+				</div>
+
+				<div class="slide_1">
+
+					<div class="row">
+						<div class="col-xs-1 col-md-1 centered-block">
+						 <!--  <div class="customNavigation">
+								<a class="btn prev2"><img src="images/arrow_mini_left.png"></a>
+							</div> -->
+						</div>
+						<div class="col-xs-10 col-md-10">
+							<div id="owl-demo2" class="owl-carousel owl-theme">
+								<div class="item"> <img src="images/display_img_3.png"></div>
+								<div class="item"> <img src="images/display_img_2.png"></div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec quattro">
-						<div class="backPanel">
-							<div class="spec-title">Memoria</div>
-							<div class="centered-block">
-							<ul>
-								<li>RAM da 3 GB + Memoria interna da 32 GB</li>
-								<li>Supporta microSD fino a 128 GB</li>
-							</ul>
-						</div>
+						<div class="col-xs-1 col-md-1 centered-block">
+							<!-- <div class="customNavigation">
+								<a class="btn next2"><img src="images/arrow_mini_right.png"></a>
+							</div> -->
 						</div>
 					</div>
-					<div class="col-md-3 bcplayer spec cinque">
-						<div class="backPanel">
-							<div class="spec-title">Rete</div>
-							<div class="centered-block">
-							<ul>
-								<li>2,5G (GSM / GPRS / EDGE): 850 / 900 / 1800 / 1900 MHz</li>
-								<li>3G (HSPA＋ 42 Mbps): 850 / 900 / 1900 / 2100 MHz</li>
-								<li>4G (LTE Cat.6 300/50 Mbps)</li>
-							</ul>
-							<p class="specsmall">(Può variare in base al Paese e al gestore)</p>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec sei">
-						<div class="backPanel">
-							<div class="spec-title">Fotocamera</div>
-							<div class="centered-block">
-							<ul>
-								<li>Fotocamera frontale da 3,7 MP + F1.9 / Modalità Selfie (90°), Selfie panoramico (120°)</li>
-								<li>Fotocamera posteriore da 16 MP + Smart OIS / Fast AF, Live HDR (Colore ricco)</li>
-							</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec sette">
-						<div class="backPanel">
-							<div class="spec-title">SO</div>
-							<div class="centered-block">
-							<ul>
-								<li class="nolist">Android 4.4 (Kitkat)</li>
-							</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec otto">
-						<div class="backPanel">
-							<div class="spec-title">Connettività</div>
-							<div class="centered-block">
-							<ul>
-								<li>Wi-Fi 802.11 a/b/g/n/ac (2 x 2 MIMO)</li>
-								<li>Download Booster, NFC, Bluetooth® v 4.1 (BLE,ANT+), USB2.0, MHL 3.0</li>
-								<li>LED IR (telecomando)</li>
-							</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec nove">
-						<div class="backPanel">
-							<div class="spec-title">Batteria</div>
-							<div class="centered-block">
-							<ul>
-								<li class="nolist">3220 mAh a ricarica rapida</li>
-							</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec dieci">
-						<div class="backPanel">
-							<div class="spec-title">Audio</div>
-							<div class="centered-block">
-							<ul>
-								<li>Codec: MP3, AAC / AAC＋ / eAAC＋, WMA, AMR-NB / WB, Vorbis, FLAC</li>
-								<li>Adapt Sound, Sound Alive, Wise Voice 2.0, Extra Volume 2.0</li>
-								<li>3 microfoni (registrazione vocale direzionale)</li>
-							</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec undici">
-						<div class="backPanel">
-							<div class="spec-title">S Pen</div>
-							<div class="centered-block">
-							<ul>
-								<li class="nolist">15 g, Distanza di hovering 15 mm, Livello di pressione 2,048</li>
-							</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 bcplayer spec dodici">
-						<div class="backPanel">
-							<div class="spec-title">Sensori</div>
-							<div class="centered-block">
-							<ul>
-								<li class="nolist">Sensore gesti, accelerometro, sensore geo-magnetico, giroscopio, sensore di luminosità ambientale, RGB, sensore di prossimità, barometro, sensore Hall, Scanner dell'impronta digitale, UV, Cardio</li>
-							</ul>
-						</div>
-						</div>
-					</div>
+
+					<div class="row">
+						<div class="well">
+							<div class="col-md-12">
+								<p class="white trenta upper">Per goderti ogni dettaglio, come mai prima.</p>
+								<p class="white trenta">
+								Schermo di altissima qualità.</p>
+								<p class="white diciotto">Immergiti in una nuova esperienza visiva, grazie ad uno schermo ancora più grande e una risoluzione ancora più evoluta, per percepire colori e dettagli più vivi che mai.</p>
+								<div class="thumbnail innerbutton">
+									<div class="caption">
+										<h3><a href="http://www.samsung.com/it/consumer/mobile-devices/galaxy-note/smartphone/SM-N910FZKEITV" alt="vai alla scheda prodotto" target="_blank">vai alla scheda prodotto</a></h3>
+									</div>
+								</div> 
+							</div><!-- End col -->
+						</div><!-- End Well -->
+					</div><!-- End row -->
+				</div>
+
+				<div class="slide_2">
+					<div class="row">
+						<div class="well">
+							<div class="col-md-12">
+								<div class="">
+									<div class="">
+										<div class="caption">
+											<img src="images/display_img_1.png">
+										</div>
+									</div>  
+
+								</div><!-- End Responsive -->
+							</div><!-- End col -->
+						</div><!-- End Well -->
+					</div><!-- End row -->
+
+					<div class="row">
+						<div class="well">
+							<div class="col-md-12">
+								<p class="white trenta upper">Per organizzare ogni attività, come mai prima.</p>
+								<p class="white trenta">
+								Multitasking più semplice e fluido.</p>
+								<p class="white diciotto">Utilizza più applicazioni sulla stessa schermata, contemporaneamente, grazie alla funzione Multi-schermo. Scegli tra diverse modalità di visualizzazione (schermo intero, multischermo, pop-up e icona) per lavorare su più applicazioni e gestire i tuoi contenuti tra un’applicazione e l’altra. Poche e semplici mosse per portare a termine tutte le tue attività.</p>
+								<div class="thumbnail innerbutton">
+									<div class="caption">
+										<h3><a href="http://www.samsung.com/it/consumer/mobile-devices/galaxy-note/smartphone/SM-N910FZKEITV" alt="vai alla scheda prodotto" target="_blank">vai alla scheda prodotto</a></h3>
+									</div>
+								</div> 
+							</div><!-- End col -->
+						</div><!-- End Well -->
+					</div><!-- End row -->
 				</div>
 
 		</div>
@@ -332,61 +307,72 @@ addNavState('spec','note4');
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		
-		<script src="../../js/bootstrap.min.js"></script>
-		<script src="../../js/owl.carousel.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.js"></script>
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="../../js/ie10-viewport-bug-workaround.js"></script>
-		<script src="../../js/viewportchecker.js"></script>
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+		<script src="js/viewportchecker.js"></script>
 
 		<script type="text/javascript">
+
 				jQuery(document).ready(function() {
-				
-					// $(".spec").mouseover(function(){
-			  //           //console.log('over');
-			  //           //$(".backPanel,.centered-block").hide('fast', function(){});
-			  //           $(this).children(".backPanel").css("display","block");
-			  //           $(this).children(".backPanel").children(".centered-block").fadeIn('fast', function(){
-			  //             centerDiv();
-			  //           });
-			  //       });
-			  //       $(".spec").mouseout(function(){
-			  //          $(this).children(".backPanel").css("display","none");
-			  //       });
-					
-					// versione jacopo
-					$(".spec").click(function(){
-						$(".backPanel,.centered-block").hide('fast');
-						$(this).children(".backPanel").toggle('fast');
-						$(this).children(".backPanel").show('fast', function(){
-							$(this).children(".centered-block").fadeIn('fast', function(){
-								//centerDiv();
-							});
+
+						var owl = $("#owl-demo");
+						var owl2 = $("#owl-demo2");
+
+						owl.owlCarousel({
+
+							items : 2, //10 items above 1000px browser width
+							itemsDesktop : [1000,2], //5 items between 1000px and 901px
+							itemsDesktopSmall : [900,2], // 3 items betweem 900px and 601px
+							itemsTablet: [600,1], //2 items between 600 and 0;
+							itemsMobile : true, // itemsMobile disabled - inherit from itemsTablet option
+							responsive: true,
+							pagination: false,
+							navigation: true,
+							navigationText: [
+								"<img src='images/arrow_mini_left.png'>",
+								"<img src='images/arrow_mini_right.png'>"
+							]
+
 						});
-					});
 
-					$(window).resize(function () {
-						//centerDiv();
-					});
-					//centerDiv();
+						owl2.owlCarousel({
+							singleItem:true,
+							items : 1,
+							responsive: true,
+							navigation:true,
+							navigationText: [
+								"<img src='images/arrow_mini_left.png'>",
+								"<img src='images/arrow_mini_right.png'>"
+							]
+						});
+
+						// Custom Navigation Events
+						// $(".next").click(function(){
+						//   owl.trigger('owl.next');
+						// })
+						// $(".prev").click(function(){
+						//   owl.trigger('owl.prev');
+						// })
+
+						// $(".next2").click(function(){
+						//   owl2.trigger('owl.next');
+						// })
+						// $(".prev2").click(function(){
+						//   owl2.trigger('owl.prev');
+						// })
+
+
+						jQuery(".slide_1").fadeIn( "slow");
+						$(".s1,.s2").click(function(){
+							$(".s1,.s2").parent().parent().parent().toggleClass("active");
+							$(".slide_1").fadeToggle('slow');
+							$(".slide_2").fadeToggle('slow');
+						});
+
 				});
-
-				function centerDiv() {
-					$(".centered-block").each(function() {
-						var divH = $(this).innerHeight()/2;
-						var parentH = $(this).parent().innerHeight()/2;
-						var divW = $(this).innerWidth()/2;
-						var parentW = $(this).parent().innerWidth()/2;
-						$(this).css({top: (parentH-divH)});
-						//$(this).css({left: (parentW-divW)});
-					});
-				}
-
-				$(window).load(function(){
-					// center div call
-					//centerDiv();
-				});
-	
 		</script>
 
 <!--#include virtual="/it/next/html/static/static_footer.html"-->
