@@ -673,13 +673,15 @@ p.specsmall{
 }
 .spec li.nolist{
 	text-indent: 0;
+	padding-left: 0;
 }
 .spec p.nolistp{
-	padding-left: 10px;
+	padding-left: 4px;
 }
 .spec li.nolist:before {
     content: "";
     color: #0689d9; /* or whatever color you prefer */
+    padding-right: 0px;
 }
 .spec .centered-block{
 	position: absolute;
