@@ -101,17 +101,16 @@
 }
 .ss_samsung .ss-carousel .inner.cheildx .n4-sec-title{
 	color: #484848;
-	font-size: 40px;
-	line-height: 38px;
+/*	font-size: 40px;
+	line-height: 38px;*/
 }
 .ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
 	color: #484848;
-	font-size: 20px;
 	height: auto;
 	display: block;
 	z-index: 999;
 	width: 100%;
-	font-size: 20px;
+	/*font-size: 20px;*/
 	padding: 0px;
 	margin: 0px;
 	margin-top: 15px;
