@@ -352,28 +352,28 @@ addNavState('spec','note4');
 					// });
 					// versione jacopo
 								
-					$(".spec").mouseover(function(){
-						console.log('over');
-						$(".backPanel,.centered-block").hide('fast', function(){});
-						$(this).children(".backPanel").show('fast', function(){
-							console.log('children');
-							centerDiv();
-							$(this).children(".centered-block").fadeIn('fast');
-						});
-					});
-					// $(".spec").mouseout(function(){
-					// 	//$(this).children(".backPanel").hide('fast');
-					// });
-					
-					// $(".spec").click(function(){
-					// 	centerDiv();
-					// 	$(".backPanel,.centered-block").hide('fast');
-					// 	$(this).children(".backPanel").toggle('fast');
+					// $(".spec").mouseover(function(){
+					// 	console.log('over');
+					// 	$(".backPanel,.centered-block").hide('fast', function(){});
 					// 	$(this).children(".backPanel").show('fast', function(){
+					// 		console.log('children');
 					// 		centerDiv();
 					// 		$(this).children(".centered-block").fadeIn('fast');
 					// 	});
 					// });
+					// $(".spec").mouseout(function(){
+					// 	//$(this).children(".backPanel").hide('fast');
+					// });
+					
+					$(".spec").click(function(){
+						centerDiv();
+						$(".backPanel,.centered-block").hide('fast');
+						$(this).children(".backPanel").toggle('fast');
+						$(this).children(".backPanel").show('fast', function(){
+							centerDiv();
+							$(this).children(".centered-block").fadeIn('fast');
+						});
+					});
 
 					$(window).resize(function () {
 						centerDiv();

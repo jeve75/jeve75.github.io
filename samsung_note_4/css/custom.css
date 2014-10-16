@@ -776,7 +776,7 @@ p.specsmall{
 	padding: 2px 10px;
 }
 /* preloading images */
-.owl-item.loading{
+/*.owl-item.loading{
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
@@ -794,7 +794,7 @@ p.specsmall{
 }
 .wrapper-with-margin{
   margin:0px 50px;
-}
+}*/
 /*.owl-theme .owl-controls .owl-buttons div {
   position: absolute;
 }
