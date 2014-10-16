@@ -18,7 +18,19 @@
 	}
 	/* fix issue samsung s2*/
 	body, .viewer,  .viewer li{
-		width: 360px !important;
+		/*width: 360px !important;*/
+	}
+	.full.spen img, .full.display img{
+		width: auto;
+		max-height: 300px;
+		max-width: 320px;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
+		display: none;
+	}
+	.ss_samsung .ss-carousel .inner.cheildx .n4-sec-title {
+		font-size: 26px !important;
+		line-height: 24px !important;
 	}
 }
 /*@media (max-width: 640px){
