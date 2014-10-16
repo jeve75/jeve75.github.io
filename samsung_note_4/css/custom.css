@@ -667,7 +667,11 @@ p.specsmall{
     text-indent: -.7em;
 }
 .spec li:before {
-    content: "• ";
+    content: "&#8226;";
+    color: #0689d9; /* or whatever color you prefer */
+}
+.spec li.nolist:before {
+    content: "";
     color: #0689d9; /* or whatever color you prefer */
 }
 .spec .centered-block{
@@ -678,12 +682,16 @@ p.specsmall{
 	vertical-align: middle;
 	display: none;
 }
-
+.spec .backPanel .spec-title {
+	margin: 25px;
+	font-size: 40px;
+	color: #428bca;
+	/*font-family: 'SamsungIFBd', Arial, sans-serif !important;*/
+}
 .btn:active, .btn.active {
 	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
 }
-
 .btn {
 	display: inline-block;
 	padding: 0px;
