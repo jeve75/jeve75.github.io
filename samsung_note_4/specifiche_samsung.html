@@ -366,14 +366,25 @@ addNavState('spec','note4');
 						});
 					} else {
 					    // "desktop" code
-					    $(".spec").click(function(){
-							centerDiv();
+					 //    $(".spec").click(function(){
+						// 	centerDiv();
+						// 	$(".backPanel,.centered-block").hide('fast');
+						// 	$(this).children(".backPanel").toggle('fast');
+						// 	$(this).children(".backPanel").show('fast', function(){
+						// 		centerDiv();
+						// 		$(this).children(".centered-block").fadeIn('fast');
+						// 	});
+						// });
+						$(".spec").mouseover(function(){
 							$(".backPanel,.centered-block").hide('fast');
-							$(this).children(".backPanel").toggle('fast');
+							//$(this).children(".backPanel").toggle('fast');
 							$(this).children(".backPanel").show('fast', function(){
 								centerDiv();
 								$(this).children(".centered-block").fadeIn('fast');
 							});
+						});
+						$(".spec").mouseout(function(){
+							$(this).children(".backPanel").hide('fast');
 						});
 						 
 					}
