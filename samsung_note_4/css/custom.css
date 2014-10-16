@@ -676,7 +676,7 @@ p.specsmall{
 	padding-left: 0;
 }
 .spec p.nolistp{
-	padding-left: 4px;
+	padding-left: 0px;
 }
 .spec li.nolist:before {
     content: "";
@@ -690,6 +690,7 @@ p.specsmall{
 	margin-right: 20px;
 	vertical-align: middle;
 	display: none;
+	top: 90px;
 }
 .spec .backPanel .spec-title {
 	margin: 19px;

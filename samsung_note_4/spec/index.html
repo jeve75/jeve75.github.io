@@ -333,7 +333,6 @@ addNavState('spec','note4');
 		<!-- Placed at the end of the document so the pages load faster -->
 		
 		<script src="../js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../js/slick.min.js"></script>
 		<script src="../js/owl.carousel.js"></script>
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -361,15 +360,15 @@ addNavState('spec','note4');
 						$(this).children(".backPanel").toggle('fast');
 						$(this).children(".backPanel").show('fast', function(){
 							$(this).children(".centered-block").fadeIn('fast', function(){
-								centerDiv();
+								//centerDiv();
 							});
 						});
 					});
 
 					$(window).resize(function () {
-						centerDiv();
+						//centerDiv();
 					});
-					centerDiv();
+					//centerDiv();
 				});
 
 				function centerDiv() {
@@ -385,7 +384,7 @@ addNavState('spec','note4');
 
 				$(window).load(function(){
 					// center div call
-					centerDiv();
+					//centerDiv();
 				});
 	
 		</script>
