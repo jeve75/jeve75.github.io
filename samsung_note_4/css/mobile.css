@@ -23,7 +23,7 @@
 	.full.spen img, .full.display img{
 		width: auto;
 		max-height: 300px;
-		max-width: 320px;
+		max-width: 320px !important;
 	}
 	.ss_samsung .ss-carousel .inner.cheildx .n4-h-text{
 		display: none;
