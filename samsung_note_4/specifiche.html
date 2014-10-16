@@ -194,6 +194,12 @@
             console.log('over');
             //$(".backPanel,.centered-block").hide('fast', function(){});
             $(this).children(".backPanel").css("display","block");
+            $(this).children(".backPanel").children(".centered-block").fadeIn('fast', function(){
+              centerDiv();
+            });
+          });
+          $(".spec").mouseout(function(){
+            $(this).children(".backPanel").css("display","none");
           });
 
           // $(".spec").click(function(){

@@ -856,3 +856,6 @@ p.specsmall{
 #owl-demo2.owl-theme .owl-controls .owl-buttons .owl-prev, #owl-demo2.owl-theme .owl-controls .owl-buttons .owl-next{
   top: 45%; 
 }
+.owl-controls {
+	position: initial !important;
+}
